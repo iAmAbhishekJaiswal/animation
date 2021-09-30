@@ -1,0 +1,111 @@
+<!doctype html><html><head><style type="text/css" id="dcoder_stylesheet">body{
+  margin:0;
+  padding:0;
+}
+#mainarea{
+  width:1200;
+  height:600px;
+  margin:auto auto;
+  background: skyblue url('/storage/emulated/0/Web tech/animation/4368.jpg') no-repeat fixed;
+  background-size:cover;
+ }
+ 
+@keyframes spin{
+  0%{
+    transform:rotate(30deg);
+  }
+  10%{
+   transform:rotate(180deg);
+  }
+  20%{
+    transform:rotate(360deg);
+  }
+  30%{
+    transform:rotate(1800deg);
+  }
+  40%{
+    transform:rotate(3000deg);
+  }
+  50%{
+    transform:rotate(5000deg);
+  }
+  60%{
+    transform:rotate(7000deg);
+  }
+  70%{
+    transform:rotate(9000deg);
+  }
+  80%{
+    transfrom:rotate(11000deg);
+  }
+  90%{
+    transform:rotate(13000deg);
+  }
+  100%{
+    transform:rotate(15000deg);
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: translatex(0px);
+  }
+  50%{
+    transform: translatex(200px);
+  }
+  100%{
+    transform: translate(1000px);
+  }
+  
+  }
+#bikecontainer{
+width:400px;
+height:400px;
+position:fixed;
+bottom:0%;
+animation: move 2s infinite ease-in;
+}
+
+#bike{
+width:350px;
+height:350px;
+position: absolute;
+z-index:100;
+}
+.wheel{
+  width:140px;
+  height:140px;
+
+  border-radius:50%;
+  animation: spin 2s infinite ease;
+ }
+ 
+ .wheel img{
+   width:140px;
+   height:140px;
+  
+   }
+ 
+ #frontwheel{
+  margin: 250px 0 0 25px;
+  float:left;   
+ }
+ 
+ #rearwheel{
+  margin:160px 12px 0 0;
+  float:right; 
+ }</style></head> 
+ <body> 
+  <div id="mainarea"> 
+   <div id="bikecontainer"> 
+    <img id="bike" src="/storage/emulated/0/Pictures/Eraser/1632987150656.png"> 
+    <div id="frontwheel" class="wheel"> 
+     <img src="/storage/emulated/0/Download/SeekPng.com_tire-png_66830.png"> 
+    </div> 
+    <div id="rearwheel" class="wheel"> 
+     <img src="/storage/emulated/0/Download/SeekPng.com_tire-png_66830.png"> 
+    </div> 
+   </div> 
+  </div> 
+ 
+</body></html>
